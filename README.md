@@ -4,7 +4,6 @@ Tested with firefox, chrome, opera and IE9+
 
 How to use it ?
 ---------------
-'''
 <nav class="nav">
 	<label for="toggle-nav" data-icon="☰" role="navigation"></label>
 	<input type="checkbox" id="toggle-nav">
@@ -15,4 +14,3 @@ How to use it ?
 		<li><a href="#">About</a></li>
 	</ul>
 </nav>
-'''
