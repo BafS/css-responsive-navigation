@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" /> 
+		
+	<title>CSS Responsive Navigation</title>
+	
+	<link rel="stylesheet" href="css-responsive-navigation.css" />
+	<style type="text/css">
+		html, body, ul, li {
+			margin: 0;
+			padding: 0;
+		}
+
+		html, body{
+			background: #f0f3f8;
+		}
+
+		body, a {
+			font: normal 16px Helvetica, Geneva, sans-serif;
+		}
+		a {
+			color: #368;
+		}
+		label[for^="toggle-nav"] {
+			position: absolute;
+			top: 10px;
+			right: 4px;
+		}
+		.nav {
+			background: #fff;
+			height: 40px;
+			line-height: 40px;
+			width: 100%;
+		}
+		.brand {
+			font-size: 18px;
+			letter-spacing: 1px;
+			margin-left: 5px;
+		}
+		.nav .menu {
+			background: #eee;
+			float:right;
+			margin: 5px;
+		}
+		.menu > li {
+			float:left;
+			list-style: none;
+		}
+		.menu > li > a {
+			padding: 5px 10px;
+			display: block;
+		}
+		.nav [data-icon]:before {
+			color: #eee;
+			font-size: 20px;
+			background: rgba(0, 0, 0, 0.7);
+			padding:10px 12px;
+			border-radius: 25px;
+		}
+		.container {
+			text-align: justify;
+			padding: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="header">
+		<nav class="nav">
+			<label for="toggle-nav" data-icon="☰" role="navigation"></label>
+			<input type="checkbox" id="toggle-nav">
+
+			<span class="brand">CSS Responsive Navigation</span>
+
+			<ul class="menu" role="menu">
+				<li><a href="#">Kant</a></li>
+				<li><a href="#">Einstein</a></li>
+				<li><a href="#">Beethoven</a></li>
+				<li><a href="#">Bohr</a></li>
+				<li><a href="#">Hilbert</a></li>
+			</ul>
+		</nav><!-- /.nav -->
+	</div><!-- /.header -->
+
+
+	<div class="container">
+		<h1>Hello World !</h1>
+
+		<h2>CSS Responsive Navigation</h2>
+
+		<p>Pure CSS responsive navigation</p>
+
+		<p>Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.</p>
+
+		<p>Sed laeditur hic coetuum magnificus splendor levitate paucorum incondita, ubi nati sunt non reputantium, sed tamquam indulta licentia vitiis ad errores lapsorum ac lasciviam. ut enim Simonides lyricus docet, beate perfecta ratione vieturo ante alia patriam esse convenit gloriosam.</p>
+
+		<p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.</p>
+	</div><!-- /.container -->
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/**
+ * CSS Responsive Navigation
+ * A pure CSS responsive navigation
+ */
+#toggle-nav {
+	display: none;
+}
+
+label[for^="toggle-nav"] {
+	display: none;
+	z-index: 9999;
+}
+
+.nav [data-icon]:before {
+	font-family: icons;
+	content: attr(data-icon);
+}
+
+@media only screen and (max-width: 759px) {
+	label[for^="toggle-nav"] {
+		display: inline;
+	}
+	#toggle-nav:checked ~ .menu {
+		max-height: 999px;
+	}
+	.menu {
+		overflow: hidden;
+		max-height: 0;
+		width: 100%;
+	}
+	.menu > li {
+		display: block;
+		width: 100%;
+	}
+}
