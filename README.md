@@ -18,4 +18,7 @@ How to use it ?
 </nav>
 ```
 
+![exemple](http://i.imgur.com/cUJD8Lc.png)
+[Test online](http://bafs.github.io/css-responsive-navigation/exemple_with_style.html)
+
 You can also use [fastclick](https://github.com/ftlabs/fastclick) to remove click delays on browsers with touch UIs.
