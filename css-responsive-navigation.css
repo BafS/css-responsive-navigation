@@ -12,20 +12,21 @@ label[for^="toggle-nav"] {
 }
 
 .nav [data-icon]:before {
-	font-family: icons;
 	content: attr(data-icon);
 }
 
 @media only screen and (max-width: 759px) {
 	label[for^="toggle-nav"] {
-		display: inline;
+		display: block;
 	}
 	#toggle-nav:checked ~ .menu {
-		max-height: 999px;
+		opacity: 1;
+		display: block;
 	}
 	.menu {
+		opacity: 0;
+		display: none;
 		overflow: hidden;
-		max-height: 0;
 		width: 100%;
 	}
 	.menu > li {
