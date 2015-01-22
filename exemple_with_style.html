@@ -6,19 +6,18 @@
 		
 	<title>CSS Responsive Navigation</title>
 	
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css-responsive-navigation.css" />
 	<style type="text/css">
 		html, body, ul, li {
 			margin: 0;
 			padding: 0;
 		}
-
-		html, body{
-			background: #f0f3f8;
-		}
-
 		body, a {
-			font: normal 16px Helvetica, Geneva, sans-serif;
+			font-family: 'Raleway', Helvetica, Geneva, sans-serif;
+		}
+		h1 {
+			font-size: 24pt;
 		}
 		a {
 			color: #368;
@@ -26,42 +25,52 @@
 		label[for^="toggle-nav"] {
 			position: absolute;
 			top: 10px;
-			right: 4px;
+			right: 6px;
 		}
 		.nav {
-			background: #fff;
-			height: 40px;
-			line-height: 40px;
+			border: none;
+			border-bottom: 1px solid #eee;
+			height: 42px;
+			line-height: 42px;
 			width: 100%;
 		}
 		.brand {
 			font-size: 18px;
 			letter-spacing: 1px;
-			margin-left: 5px;
+			margin-left: 10px;
 		}
 		.nav .menu {
-			background: #eee;
+			background: #fff;
 			float:right;
-			margin: 5px;
+			margin: 0;
+			margin-bottom: 20px;
 		}
 		.menu > li {
 			float:left;
 			list-style: none;
 		}
 		.menu > li > a {
-			padding: 5px 10px;
+			padding: 0px 15px;
 			display: block;
+			text-decoration: none;
+		}
+		.menu > li > a:hover {
+			background: rgba(189, 195, 200, .1);
+
 		}
 		.nav [data-icon]:before {
-			color: #eee;
+			color: rgba(0, 0, 0, .7);
 			font-size: 20px;
-			background: rgba(0, 0, 0, 0.7);
-			padding:10px 12px;
+			border: 2px solid rgba(0, 0, 0, .7);
+			padding: 10px 12px;
 			border-radius: 25px;
+		}
+		.nav [data-icon]:hover:before {
+			background: rgba(0, 0, 0, .05);
 		}
 		.container {
 			text-align: justify;
-			padding: 10px;
+			padding: 25px;
 		}
 	</style>
 
@@ -88,9 +97,9 @@
 
 
 	<div class="container">
-		<h1>Hello World !</h1>
-
-		<h2>CSS Responsive Navigation</h2>
+		<h1>CSS Responsive Navigation</h1>
+		
+		<h2>Hello World !</h2>
 
 		<p>Pure CSS responsive navigation</p>
 
