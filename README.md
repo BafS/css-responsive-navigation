@@ -17,3 +17,5 @@ How to use it ?
 	</ul>
 </nav>
 ```
+
+You can also use [fastclick](https://github.com/ftlabs/fastclick) to remove click delays on browsers with touch UIs.
