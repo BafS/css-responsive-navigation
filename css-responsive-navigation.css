@@ -9,6 +9,7 @@
 label[for^="toggle-nav"] {
 	display: none;
 	z-index: 9999;
+	cursor: pointer;
 }
 
 .nav [data-icon]:before {
